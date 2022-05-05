@@ -1,0 +1,62 @@
+{
+    "Capitalism": {
+        "name": "\\033[38;2;255;243;0mCapit\\033[38;2;0;128;0malism\\033[m",
+        "description": "Let the free market rise!",
+        "al": 0.34,
+        "lr": 0.6,
+        "tags": [
+            "capitalist",
+            "rightist"
+        ],
+        "contradicts": [
+            "leftist",
+            "regulationist"
+        ]
+    },
+    "Anti-Communism": {
+        "name": "\\033[38;2;0;0;0mAnti-\\033[38;2;255;243;0mCommunism\\033[m",
+        "description": "The USSR is known as a dictatorship... so we must burn Communism down!",
+        "al": 0,
+        "lr": 0.65,
+        "tags": [
+            "capitalist",
+            "rightist"
+        ],
+        "contradicts": [
+            "leftist"
+        ]
+    },
+    "Liberalism": {
+        "name": "\\033[38;2;0;106;167mLiber\\033[38;2;255;230;128malism\\033[m",
+        "description": "Freedom and liberty!",
+        "al": -0.2,
+        "lr": 0.65,
+        "tags": [
+            "libertarian",
+            "rightist",
+            "capitalist",
+            "welfarist",
+            "regulationist"
+        ],
+        "contradicts": [
+            "leftist",
+            "fascist"
+        ]
+    },
+    "Laisezz-Faire Economics": {
+        "name": "\\033[38;2;252;220;124mLaisezz-Faire Economics",
+        "description": "Who's right is it for the government to control the economy?",
+        "al": -0.21,
+        "lr": 0.52,
+        "tags": [
+            "libertarian",
+            "rightist",
+            "capitalist"
+        ],
+        "contradicts": [
+            "leftist",
+            "fascist",
+            "regulationist"
+        ]
+    }
+}
