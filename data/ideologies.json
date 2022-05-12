@@ -16,7 +16,7 @@
     "Anti-Communism": {
         "name": "\\033[38;2;0;0;0mAnti-\\033[38;2;255;243;0mCommunism\\033[m",
         "description": "The USSR is known as a dictatorship... so we must burn Communism down!",
-        "al": 0,
+        "al": 0.32,
         "lr": 0.65,
         "tags": [
             "capitalist",
@@ -30,13 +30,14 @@
         "name": "\\033[38;2;0;106;167mLiber\\033[38;2;255;230;128malism\\033[m",
         "description": "Freedom and liberty!",
         "al": -0.2,
-        "lr": 0.65,
+        "lr": 0.54,
         "tags": [
             "libertarian",
             "rightist",
             "capitalist",
             "welfarist",
-            "regulationist"
+            "regulationist",
+            "individualist"
         ],
         "contradicts": [
             "leftist",
@@ -58,5 +59,73 @@
             "fascist",
             "regulationist"
         ]
-    }
+    },
+    "Libertarianism": {
+        "name": "\\033[38;2;255;243;0mLiberta\\033[38;2;30;30;30mrianism",
+        "description": "DON'T TREAD ON ME!!!",
+        "al": -0.34,
+        "lr": 0.43,
+        "tags": [
+            "libertarian",
+            "rightist",
+            "capitalist",
+            "individualist"
+        ],
+        "contradicts": [
+            "leftist",
+            "fascist",
+            "regulationist"
+        ]
+    },
+    "Regulationism": {
+        "name": "\\033[38;2;38;0;153mRegulat\\033[38;2;255;255;255mionism",
+        "description": "If it moves, tax it. If it keeps moving, regulate it. If it stops moving, subsidize it.",
+        "al": 0.12,
+        "lr": 0.2,
+        "tags": [
+            "rightist",
+            "capitalist",
+            "regulationist"
+        ],
+        "contradicts": [
+            "leftist",
+            "fascist",
+            "libertarian"
+        ]
+    },
+    "Libertarian Socialism": {
+        "name": "\\033[38;2;255;0;0mLibertarian \\033[38;2;20;20;20mSocialism",
+        "description": "Socialism will be free, or it will not be at all!",
+        "al": -0.76,
+        "lr": -0.45,
+        "tags": [
+            "libertarian",
+            "leftist",
+            "individualist"
+        ],
+        "contradicts": [
+            "rightist",
+            "capitalist",
+            "regulationist",
+            "fascist"
+        ]
+    },
+    "Anarcho-Collectivism": {
+        "name": "\\033[38;2;10;10;10mAnarcho-\\033[38;2;137;0;20mCollectivism",
+        "description": "The collective should be the focus of anarchy!",
+        "al": -0.65,
+        "lr": -0.32,
+        "tags": [
+            "leftist",
+            "collectivist",
+            "anarchist"
+        ],
+        "contradicts": [
+            "rightist",
+            "capitalist",
+            "regulationist",
+            "fascist",
+            "individualist"
+        ]
+    }    
 }
