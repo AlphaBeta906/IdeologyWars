@@ -47,7 +47,7 @@
     "Laisezz-Faire Economics": {
         "name": "\\033[38;2;252;220;124mLaisezz-Faire Economics",
         "description": "Who's right is it for the government to control the economy?",
-        "al": -0.21,
+        "al": -0.45,
         "lr": 0.52,
         "tags": [
             "libertarian",
@@ -127,5 +127,18 @@
             "fascist",
             "individualist"
         ]
-    }    
+    },
+    "Anarcho-Individualism": {
+        "name": "\\033[38;2;10;10;10mAnarcho-\\033[38;2;0;255;218mIndividualism",
+        "description": "If the individual has the right to govern himself, all external government is tyranny.",
+        "al": -0.65,
+        "lr": 0,
+        "tags": [
+            "individualist",
+            "anarchist"
+        ],
+        "contradicts": [
+            "collectivist"
+        ]
+    }
 }
