@@ -25,3 +25,13 @@ class Ideology:
         print(f"{set_color(BOLD + 'Left', red)}-{set_color(BOLD + 'Right', blue)}: " + lr(self.lr))
         print("Tags: " + ", ".join([tagify(tag) for tag in self.tags]))
         print("Contradicts: " + ", ".join([tagify(tag) for tag in self.contradicts]))
+
+    def json(self) -> dict:
+        return {
+            'name': self.name,
+            'description': self.description,
+            'al': self.al,
+            'lr': self.lr,
+            'tags': self.tags,
+            'contradicts': self.contradicts
+        }

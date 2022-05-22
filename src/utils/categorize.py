@@ -15,7 +15,7 @@ def al(value):
         return "\033[1m\033[38;2;63;81;181mAuthoritarian"
     elif value < 0.75:
         return "\033[1m\033[38;2;0;255;218mUltra-\033[38;2;63;81;181mAuthoritarian"
-    elif value < 1:
+    else:
         return "\033[1m\033[38;2;255;255;255mOmni-\033[1m\033[38;2;255;165;0mForceist"
 
 def lr(value):
@@ -35,6 +35,6 @@ def lr(value):
         return "\033[1m\033[38;2;255;243;0mCapit\033[38;2;0;128;0malist\033[m"
     elif value < 0.75:
         return "\033[1m\033[38;2;0;255;218mUltra-\033[38;2;255;243;0mCapit\033[38;2;0;128;0malist\033[m"
-    elif value < 1:
+    else:
         return "\033[1m\033[38;2;255;255;255mOmni-\033[38;2;10;10;10mMarketist"
     
