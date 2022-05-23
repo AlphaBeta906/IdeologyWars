@@ -5,12 +5,16 @@ from console.ansi import get_color_escape, set_color
 from utils.categorize import al, lr
 
 class Vessel:
-    def __init__(self, cards=[]) -> None:
-        self.cards = cards
+    def __init__(self, cards=None) -> None:
         self.stats = {
             'lr': 0,
             'al': 0,
         }
+
+        if cards is None:
+            self.cards = []
+        else:
+            self.cards = cards
 
     def json(self):
         cards = [card.name for card in self.cards]
