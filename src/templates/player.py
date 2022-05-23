@@ -1,14 +1,18 @@
 from .vessel import Vessel
 
 class Player:
-    def __init__(self, vessels:list=None, inventory:list=[], currency:int=100) -> None:
-        self.inventory = inventory
+    def __init__(self, vessels:list=None, inventory:list=None, currency:int=100) -> None:
         self.currency = currency
 
         if vessels is None:
             self.vessels = [Vessel() for x in range(5)]
         else:
             self.vessels = vessels
+
+        if inventory is None:
+            self.inventory = []
+        else:
+            self.inventory = inventory
 
     def json(self) -> dict:
         return {
