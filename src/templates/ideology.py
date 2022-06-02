@@ -1,4 +1,4 @@
-from console.ansi import get_color_escape, set_color
+from client.ansi import get_color_escape, set_color
 from utils.tagify import tagify
 from utils.categorize import al, lr
 

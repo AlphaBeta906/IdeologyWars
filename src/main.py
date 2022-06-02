@@ -2,14 +2,14 @@ from random import randint, choice
 from pyfiglet import Figlet
 import inquirer
 
-from console.ansi import get_color_escape, set_color
-from console.gradient import gradient
+from client.ansi import get_color_escape, set_color
+from client.gradient import gradient
 from utils.color import rgb_to_decimal
 from templates.ideology import Ideology
 from utils.json_reader import JSONLoader
 from utils.tagify import tagify, detagify
-from templates.player import Player
-from console.clear import clear_screen
+from templates.vessel import Vessel
+from client.clear import clear_screen
 
 BOLD = '\033[1m'
 
@@ -43,6 +43,9 @@ for ideology in ideology_json:
 
         pack_data[pack].append(ideology)
 
+x, y = 0, 0
+vessel = Vessel()
+
 while True:
     question = [
         inquirer.List('answer',
@@ -60,14 +63,17 @@ while True:
         print("\nExiting...")
         break
     else:
-        try:
-            ideology = choice(pack_data[pack])
-            ideology_data[ideology].info()
-            print()
+        ideology = choice(pack_data[pack])
+        ideology_data[ideology].info()
+        print()
 
-            player = Player()
-            player.vessels[0].add_cards([ideology_data[ideology]])
-            player.vessels[0].info()
-            print()
-        except ValueError:
-            print("\nNo ideologies in this pack can be utilized.")
+        vessel.add_to_grid(ideology_data[ideology], x, y)
+        vessel.grid_info()
+        print()
+
+        # Change x and y to the next available space.
+        if x != 2:
+            x += 1
+        else:
+            x = 0
+            y += 1

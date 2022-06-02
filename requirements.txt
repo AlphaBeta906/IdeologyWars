@@ -1,0 +1,4 @@
+colour==0.1.5
+pyfiglet==0.8.post1
+inquirer==2.9.2
+prettytable==3.3.0
